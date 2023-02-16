@@ -1,0 +1,379 @@
+
+/*Entire body styles*/
+body{
+    background-color:#f5f5f5;
+    overflow:scroll;
+    min-width:1000px; 
+    max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+/*toppest navbar (navtopdiv)*/
+.navtop {
+    background-color: darkorange;
+    height: 60px;
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+.navtop div h1, .navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+.navtop div h1 {
+    flex:1;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #eaebed;
+    font-weight: normal;
+}
+.navtop div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #c1c4c8;
+    font-weight: bold;
+}
+.navtop div a i {
+    padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+    color: #eaebed;
+}
+
+/*searchbar division  (searchdiv)*/
+.searchdiv{
+    margin-top:20px;
+    border:2px solid white;
+    height:72px;
+    display:flex;
+    background-color:#ffffff;
+}
+
+.searchdiv button:hover{
+    background-color:darkorange;
+}
+
+.searchdiv .inputs{
+    width:70%;
+}
+.searchdiv .logo{
+    width:10%;
+}
+
+.searchdiv .icons{
+    width:20%;
+    display:flex;
+    margin:auto;
+    position: relative;/*ne*/
+}
+.searchdiv .icons a{
+    text-decoration:none;
+    margin:auto;
+    color:black;
+}
+.searchdiv .icons a:hover{
+    color:orange;
+}
+.icons .dropdown-content,.icons .dropdown{
+    display: none;
+    position: absolute;
+    width:200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7); 
+    z-index: 1;
+    margin-top:30px;
+    border-radius:4px;
+    background-color:white;
+    opacity:1;
+    height:fit-content;
+}
+.icons .dropdown-content a{
+    color:black;
+    display: block;
+    height:20%;
+    margin:15px;
+}
+.icons .dropdown a{
+    display:block;
+    margin:15px;
+}
+.icons .dropdown-content a:hover,.icons .dropdown a:hover{
+    font-weight:bold;
+}
+.icons .dropdown-content .login{
+    width:90%;
+    border-radius:4px;
+    background-color:orange;
+    margin:10px 10px;
+}
+.icons .dropdown-content .login:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+    background-color:darkorange;
+}
+
+
+.icons .show{
+    display: block;
+}
+.icons .showmore{
+    display: block;
+}
+.searchdiv button{
+    width:20%;
+    background-color:orange;
+    border:1px;
+    border-radius:5px;
+    height:40px;
+    font-weight:bolder;
+    font-size:large;
+    color:white;
+    cursor:pointer;
+    margin-left:10px;
+}
+.searchdiv div.inputs{
+    padding:0px 10px; 
+}
+.serachdiv div.icons a{
+    margin:auto 10px;
+}
+.searchdiv input{
+    width:70%;
+    height:40px;
+    border-radius:6px;
+    border:1px solid ;
+    margin-top:16px;
+    margin-bottom:16px;
+    outline:none;
+}
+
+/*2nd div of body...*/
+.div{
+    margin-top:30px;
+    display:flex;
+}
+
+/*first div of .div*/
+.category{
+    width:25%;
+    height:400px;
+    background-color:white;
+    border:2px solid white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.category ul{
+    list-style-type:none;
+}
+.category ul li{
+    margin:10px;
+}
+.category ul li a{
+    color:black;
+    text-decoration:none;
+}
+.category ul li a i{
+    margin-right:5px;
+}
+.category ul li a:hover{
+    color:orange;
+}
+.categoryresults{
+    width:712px;
+    height:384px;
+    background-color:white;
+    margin-left:15px;
+    cursor:pointer;
+}
+.categoryresults img{
+    max-width: 100%;
+    width:auto;
+    height:100%;
+}
+
+<!--start Products section-->
+main {
+    padding: 20px; 
+
+}
+
+.Products{
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 25%;
+    height: 40%;
+}
+
+.product button {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid white;
+  
+}
+
+.container {
+    text-align: center;
+    border-top: none;
+    
+
+}
+<!--End Products section-->
+
+.policy{
+    background-color:white;
+    width:10%;
+    margin-left:10px;
+}
+.extra{
+    width:25%;
+    background-color:white;
+    margin-left:15px;
+    height:400px;
+    display:block;
+}
+.extra .policy{
+    height:40%;
+    margin-bottom:40px;
+    background-color:white;
+    width:100%;
+    margin-left:0px;
+    margin-right:0px;
+    border-radius:6px;
+}
+.extra .ads{
+    height:48%;
+    background-color:white;
+    width:210;
+    margin-right:0px;
+    border-radius:6px;
+}
+.services{
+    margin-top:20px;
+    display:flex;
+    height:fit-content;
+}
+.services a{
+    width:20%;
+    margin:auto;
+    height:50px;
+    background-color:white;
+    color:black;
+    border-radius:6px;
+    border:none;
+    font-size:1rem;
+    font-weight:bold;
+    cursor: pointer;
+    text-decoration:none;
+    text-align:center;
+    padding-top:10px;
+}
+
+/*last div*/
+.footer{
+    margin-top:30px;
+}
+.email{
+    display:block;
+    height:fit-content;
+    background-color:black;
+    color:white;
+    display:flex;
+    margin-bottom:0px;
+}
+.email p,h4{
+    margin:0px 0px;
+    padding:10px 10px;
+}
+.email input{
+    margin:0px 10px 10px;
+    height:30px;
+    width:300px;
+    border-radius:6px;
+    outline:none;
+}
+.gender{
+    background-color:black;
+    color:white;
+    height:30px;
+    width:90px;
+    border:1px solid white;
+    border-radius:4px;
+    cursor:pointer;
+}
+.gender:hover{
+    border:2px solid orange;
+    color:orange;
+}
+.download a{
+    color:white;
+    text-decoration:none;
+    border:1px solid;
+    border-radius:4px;
+    font-size:large;
+    padding:5px 5px;
+}
+.download a:hover{
+    color:orange;
+    border:1px solid orange;
+}
+.download{
+    margin:auto;
+    float:left; 
+}
+.contactus,.join{
+    background-color:rgb(50 50 50 / 100%);
+    margin-top:0px;
+    display:flex;
+}
+
+.contactus ul,.join ul{
+    list-style-type:none;
+}
+.help,.about,.makemoney,.intenational{
+    width:25%;
+}
+.contactus ul li a{
+    text-decoration:none;
+    color:white;
+}
+.contactus ul li a:hover{
+    text-decoration:underline;
+}
+.contactus ul li p,h5{
+    color:white;
+}
+.socials,.payment{
+    width:30%;
+}
+.socials ul,.payment ul{
+    display:flex;
+}
+.socials ul li i,.payment ul li i{
+    font-size:20px;
+    margin:auto 20px;
+    color:white;
+}
+.socials h5,.payment h5{
+    text-align: center;;
+}
+.socials ul li i:hover,.payment ul li i:hover{
+    color:orange;
+}
